@@ -1,0 +1,56 @@
+{
+  "name": "goris",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/index.js",
+  "publishConfig": {
+    "access": "public",
+    "publish-branch": "production",
+    "git-checks": false
+  },
+  "bin": {
+    "goris": "bin/goris"
+  },
+  "repository": "https://github.com/cyrusky-scaffold/scaffold.git",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "scripts": {
+    "dev": "nodemon",
+    "build": "node ./build/build.js"
+  },
+  "keywords": [
+    "scaffold",
+    "koa",
+    "nodejs"
+  ],
+  "author": "cyrusky <bo.jin@borgor.cn>",
+  "license": "MIT",
+  "devDependencies": {
+    "@esbuild-plugins/tsconfig-paths": "^0.1.2",
+    "@eslint/js": "^9.11.1",
+    "@types/koa": "^2.15.0",
+    "@types/koa__router": "^12.0.4",
+    "@types/node": "^22.7.2",
+    "esbuild": "^0.24.0",
+    "eslint": "^9.11.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.7.0"
+  },
+  "dependencies": {
+    "@koa/router": "^13.1.0",
+    "dotenv": "^16.4.5",
+    "inversify": "^6.0.2",
+    "koa": "^2.15.3",
+    "log4js": "^6.9.1",
+    "reflect-metadata": "^0.2.2"
+  },
+  "packageManager": "pnpm@9.11.0"
+}
